@@ -17,7 +17,7 @@ public class NewBehaviourScript : MonoBehaviour
     {
         float X_movement = Input.GetAxis("Horizontal");
         float Y_movement = Input.GetAxis("Vertical");
-        transform.position += (new Vector3(X_movement, Y_movement,0)) * speed;
+        transform.position += (new Vector3(X_movement, Y_movement,0)) * speed*Time.deltaTime;
         Debug.Log("X_movement : " + X_movement + "Y_movement : " + Y_movement);
     }
 }
