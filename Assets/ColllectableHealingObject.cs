@@ -5,6 +5,7 @@ using UnityEngine;
 public class ColllectableHealingObject : MonoBehaviour
 {
     public int healAmount = 5;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.tag == "Player")
