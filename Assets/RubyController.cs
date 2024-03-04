@@ -88,7 +88,7 @@ public class RubyController : MonoBehaviour
         }
 
         HP = Mathf.Clamp(HP, 0, maxHP);
-        Debug.Log("Player hp is now" + HP);
+        UIHealthBar.instance.SetValue(currentHP / (float)maxHP);
     }
 
     void Launch()
